@@ -26,7 +26,7 @@
 		<link>
 			<name>.link_to_grails_plugins</name>
 			<type>2</type>
-			<location>C:/Users/Hema/Documents/workspace-ggts-3.6.0.RELEASE/sistema-de-cadastro/target/work/plugins</location>
+			<location>/home/hema/git/sistema-de-cadastro/target/work/plugins</location>
 		</link>
 	</linkedResources>
 </projectDescription>
