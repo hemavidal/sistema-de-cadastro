@@ -59,24 +59,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${pessoaInstance?.setor}">
-				<li class="fieldcontain">
-					<span id="setor-label" class="property-label"><g:message code="pessoa.setor.label" default="Setor" /></span>
-					
-						<span class="property-value" aria-labelledby="setor-label"><g:link controller="setor" action="show" id="${pessoaInstance?.setor?.id}">${pessoaInstance?.setor?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${pessoaInstance?.grupoCaseiro}">
-				<li class="fieldcontain">
-					<span id="grupoCaseiro-label" class="property-label"><g:message code="pessoa.grupoCaseiro.label" default="Grupo Caseiro" /></span>
-					
-						<span class="property-value" aria-labelledby="grupoCaseiro-label"><g:link controller="grupoCaseiro" action="show" id="${pessoaInstance?.grupoCaseiro?.id}">${pessoaInstance?.grupoCaseiro?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${pessoaInstance?.sexo}">
 				<li class="fieldcontain">
 					<span id="sexo-label" class="property-label"><g:message code="pessoa.sexo.label" default="Sexo" /></span>

@@ -38,24 +38,6 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: pessoaInstance, field: 'setor', 'error')} required">
-	<label for="setor">
-		<g:message code="pessoa.setor.label" default="Setor" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="setor" name="setor.id" from="${sc.model.Setor.list()}" optionKey="id" required="" value="${pessoaInstance?.setor?.id}" class="many-to-one"/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: pessoaInstance, field: 'grupoCaseiro', 'error')} required">
-	<label for="grupoCaseiro">
-		<g:message code="pessoa.grupoCaseiro.label" default="Grupo Caseiro" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="grupoCaseiro" name="grupoCaseiro.id" from="${sc.model.GrupoCaseiro.list()}" optionKey="id" required="" value="${pessoaInstance?.grupoCaseiro?.id}" class="many-to-one"/>
-
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: pessoaInstance, field: 'sexo', 'error')} required">
 	<label for="sexo">
 		<g:message code="pessoa.sexo.label" default="Sexo" />

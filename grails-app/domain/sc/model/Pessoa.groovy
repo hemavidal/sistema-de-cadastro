@@ -19,8 +19,6 @@ class Pessoa {
 	EstadoCivil estadoCivil
 	String estado
 	String cidade
-	Setor setor
-	GrupoCaseiro grupoCaseiro
 	Sexo sexo
 	Procedencia procedencia
 	Profissao profissao
@@ -28,14 +26,12 @@ class Pessoa {
 	Endereco endereco
 	List<String> telefones
 	String email
-	
+	static embedded = ['endereco']
     static constraints = {
 		nome nullable:false, blank:false
 		apelido nullable:false, blank:false
 		nivelDeCrescimento nullable:false, blank:false 
 		estadoCivil nullable:false, blank:false
-		setor nullable:false, blank:false
-		grupoCaseiro nullable:false, blank:false
 		sexo nullable:false, blank:false
 		procedencia nullable:false, blank:false
     }
